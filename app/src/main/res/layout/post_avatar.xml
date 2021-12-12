@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/postAvatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/post_avatar_drowable" />
+
+    <TextView
+        android:id="@+id/authorId"
+        app:layout_constraintStart_toEndOf="@id/postAvatar"
+        app:layout_constraintTop_toTopOf="@id/postAvatar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@sample/posts_avatars" />
+
+    <TextView
+        android:id="@+id/publishedTimer"
+        app:layout_constraintStart_toEndOf="@id/postAvatar"
+        app:layout_constraintBottom_toBottomOf="@id/postAvatar"
+        app:layout_constraintTop_toBottomOf="@id/authorId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
