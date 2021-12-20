@@ -34,7 +34,7 @@
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@sample/new_posts.json/data/content" />
+        android:text="@string/content" />
 
     <TextView
         android:id="@+id/publishedDate"
@@ -44,7 +44,7 @@
         android:layout_marginStart="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@sample/new_posts.json/data/published" />
+        android:text="@string/timer" />
 
     <TextView
         android:id="@+id/author"
@@ -56,15 +56,15 @@
         android:layout_marginStart="16dp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:text="@sample/new_posts.json/data/author"
+        android:text="@string/author"
         />
 
     <ImageButton
         android:id="@+id/menu"
         android:background="@android:color/transparent"
         android:contentDescription="@string/get_menu"
-        android:layout_width="28dp"
-        android:layout_height="40dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         app:srcCompat="@drawable/ic_baseline_more_vert_24"
         app:layout_constraintBottom_toBottomOf="@id/postAvatar"
         app:layout_constraintTop_toTopOf="@id/postAvatar"
@@ -115,7 +115,7 @@
         app:layout_constraintTop_toTopOf="@id/like"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@sample/new_posts.json/data/CountOfLikes" />
+        android:text="@sample/new_posts.json/data/CountOfLikes" />
 
     <TextView
         android:id="@+id/CountOfShare"
@@ -126,7 +126,7 @@
         android:layout_marginStart="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@sample/new_posts.json/data/CountOfShares" />
+        android:text="@sample/new_posts.json/data/CountOfShares" />
 
     <TextView
         android:id="@+id/CountOfView"
@@ -136,6 +136,6 @@
         app:layout_constraintTop_toTopOf="@id/viewCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@sample/new_posts.json/data/CountOfViews" />
+        android:text="@sample/new_posts.json/data/CountOfViews" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
